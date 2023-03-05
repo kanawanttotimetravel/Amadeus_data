@@ -1,0 +1,18 @@
+version: "3.1"
+
+stories:
+
+# - story: greeting path
+#   steps: 
+#   - intent: greeting
+#   - action: utter_greeting
+#   - intent: goodbye
+#   - action: utter_goodbye
+
+- story: proper greeting path
+  steps:
+  - intent: greeting
+  - action: utter_greeting
+  - action: utter_ask_name
+  - intent: introduce
+  - action: utter_greeting_by_name

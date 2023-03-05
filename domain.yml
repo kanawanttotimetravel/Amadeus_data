@@ -1,0 +1,45 @@
+version: "3.1"
+
+intents:
+  - greeting
+  - introduce
+  - affirm
+  - deny
+  - goodbye
+  - object
+
+entities:
+  - name 
+
+slots:
+  name:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: name 
+
+responses:
+  utter_greeting:
+  - text: "xin chào"
+  - text: "chào bạn"
+  - text: "hân hạnh được gặp"
+
+  utter_greeting_by_name:
+  - text: "chào {name}"
+
+  utter_goodbye:
+  - text: "tạm biệt"
+  - text: "hẹn gặp lại"
+
+  utter_ask_name:
+  - text: "tên bạn là gì?"
+
+  utter_affirm:
+  - text: "có"
+
+  utter_deny:
+  - text: "không"
+  
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

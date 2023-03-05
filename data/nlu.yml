@@ -1,0 +1,43 @@
+version: "3.1"
+
+nlu:
+- intent: introduce
+  examples: |
+    - tên tôi là [Anh]{"entity" : "name"} 
+    - tôi là [Minh]{"entity" : "name"}
+    - toi la [Đức]{"entity" : "name"}
+    - tôi tên là [Long]{"entity" : "name"}  
+
+- intent: greeting
+  examples: |
+    - chào 
+    - hi 
+    - hello 
+    - xin chào 
+    - chào bạn 
+
+- intent: goodbye
+  examples: |
+    - chào tạm biệt
+    - tạm biệt 
+    - hẹn gặp lại 
+    - gặp lại sau 
+
+- intent: affirm
+  examples: |
+    - có 
+    - đồng ý 
+    - tôi đồng ý 
+    - tôi thích ý kiến của bạn 
+
+- intent: deny
+  examples: |
+    - không
+    - tôi không đồng ý
+    - tôi từ chối 
+
+- intent: object
+  examples: |
+    - tôi phản đối
+    - phản đối 
+    - tôi không đồng tình với bạn
