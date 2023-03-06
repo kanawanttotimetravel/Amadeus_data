@@ -3,10 +3,14 @@ version: "3.1"
 nlu:
 - intent: introduce
   examples: |
+    - tôi là [Ngọc Anh]{"entity" : "name"} 
     - tên tôi là [Anh]{"entity" : "name"} 
     - tôi là [Minh]{"entity" : "name"}
     - toi la [Đức]{"entity" : "name"}
     - tôi tên là [Long]{"entity" : "name"}  
+    - tao là [Khổng, Ngọc Anh]{"entity" : "name"}
+    - tui là [Đỗ, Anh]{"entity" : "name"}
+    - tại hạ là [Nguyễn, Quang Minh]{"entity" : "name"}
 
 - intent: greeting
   examples: |
@@ -41,3 +45,6 @@ nlu:
     - tôi phản đối
     - phản đối 
     - tôi không đồng tình với bạn
+
+
+# Tôi là Võ Nguyên Giáp

@@ -13,7 +13,7 @@ entities:
 
 slots:
   name:
-    type: any
+    type: list
     mappings:
     - type: from_entity
       entity: name 
@@ -43,3 +43,6 @@ responses:
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+# Tôi là Nguyễn Quang Minh
+# Xin chào 
